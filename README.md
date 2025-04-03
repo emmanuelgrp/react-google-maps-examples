@@ -1,7 +1,7 @@
 # Proyecto React con React Router y MUI 
 Este proyecto es una aplicación simple desarrollada con React que demuestra la implementación básica del enrutamiento del lado del cliente utilizando `react-router-dom` v6. Incluye la configuración de rutas estáticas para diferentes páginas (Home, About, Contact), el uso de una barra de navegación (`ResponsiveAppBar` de Material UI) y un ejemplo de navegación programática con el hook `useNavigate`.
 
-# Investigación previa
+# Información útil
 
 1. **¿Qué es React Router y para qué se utiliza?**
 
@@ -114,7 +114,7 @@ function MiComponenteConBoton() {
 
 export default MiComponenteConBoton;
 ```
-# Imágenes
+# Visualización del proyecto
 **Ruta: `/`**  
 Esta imagen muestra la vista inicial o principal de la aplicación, accesible a través de la ruta raíz `/`. Este componente podría ser algo como la página de inicio de la aplicación, donde se centraliza la información más importante.
 
