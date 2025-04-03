@@ -8,6 +8,9 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import { useNavigate } from 'react-router-dom';
 
 function DataDisplayer() {
   const [data, setData] = useState([]);
@@ -25,8 +28,20 @@ function DataDisplayer() {
   return data.length > 0 ? <BasicTable data={data} /> : <p>Loading...</p>;
 }
 
+
+
 function BasicTable({ data }) {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/contact');
+  };
+
   return (
+    <>
+    <Box component="section" sx={{ p: 2, display:'flex', justifyContent:'flex-end' }}>
+      <Button onClick={handleClick} variant="contained">Ir a Contact</Button>
+    </Box>
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
@@ -51,6 +66,8 @@ function BasicTable({ data }) {
         </TableBody>
       </Table>
     </TableContainer>
+    </>
+
   );
 }
 
