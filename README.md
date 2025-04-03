@@ -25,16 +25,22 @@
 Este código configura una aplicación React utilizando **React Router** . **BrowserRouter** gestiona la navegación basada en el historial del navegador, permitiendo la actualización de la URL sin recargar la página. **Routes** agrupa todas las rutas, y **Route** define cada una de ellas, como la ruta raíz `/` que renderiza el componente `<App />`, `/home` para `<Home />`, `/about` para `<About />`, y `/contact` para `<Contact />`. Este enfoque permite una navegación fluida entre las distintas vistas de la aplicación sin interrupciones.
 
    ```jsx
-import { BrowserRouter, Routes, Route } from 'react-router-dom'; // <-- Importa BrowserRouter y Routes
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import  App  from  './App.jsx'
+import  Home  from  './componets/Home.jsx'
+import  About  from  './componets/About.jsx'
+import  Contact  from  './componets/Contact.jsx'
     
-    <BrowserRouter>
-    	<Routes>
-    		<Route path="/" element={<App />} />
-    		<Route path="/home" element={<Home />} />
-    		<Route path="/about" element={<About />} />
-    		<Route path="/contact" element={<Contact />} />
-    	</Routes>
-    </BrowserRouter>
+    createRoot(document.getElementById('root')).render(
+	    <BrowserRouter>
+	    	<Routes>
+	    		<Route path="/" element={<App />} />
+	    		<Route path="/home" element={<Home />} />
+	    		<Route path="/about" element={<About />} />
+	    		<Route path="/contact" element={<Contact />} />
+	    	</Routes>
+	    </BrowserRouter>
+    )
 ```
 
 # Descripción de `useNavigate` en React Router
