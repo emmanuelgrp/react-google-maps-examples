@@ -26,10 +26,6 @@ const pages = [
     {
         "name" : "Contact",
         "href" : "/contact"
-    },
-    {
-        "name" : "App",
-        "href" : "/"
     }
 ]
 
@@ -148,7 +144,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Javier Emmanuel" src="/static/images/avatar/2.jpg" />
+              <Avatar alt="Javier Emmanuel" src="/static/images/avatar/2.jpg" sx={{ bgcolor: "#1565C0" }}>J</Avatar>
               </IconButton>
             </Tooltip>
             <Menu
