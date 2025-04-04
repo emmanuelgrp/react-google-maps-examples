@@ -140,7 +140,7 @@ Pasos para la instalación:
 
 1. **Clona el repositorio:**
    ```bash
-   https://github.com/emmanuelgrp/proyecto_react.git
+   git clone https://github.com/emmanuelgrp/proyecto_react.git
    ```
 
 2. **Navega al directorio:**
