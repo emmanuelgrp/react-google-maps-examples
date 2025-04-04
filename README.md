@@ -145,7 +145,7 @@ Pasos para la instalación:
 
 2. **Navega al directorio:**
    ```bash
-   cd proyecto_react
+   cd react-router-mui-main
    ```
 
 3. **Instala los modulos del proyecto:**
