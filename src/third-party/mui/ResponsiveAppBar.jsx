@@ -15,18 +15,26 @@ import { Link } from 'react-router-dom';
 import ComputerIcon from '@mui/icons-material/Computer';
 
 const pages = [
-    {
-        "name" : "Home",
-        "href" : "/home"
-    },
-    {
-        "name" : "About",
-        "href" : "/about"
-    },
-    {
-        "name" : "Contact",
-        "href" : "/contact"
-    }
+  {
+    "name" : "Mapa Punto",
+    "href" : "/mapa-con-punto"
+  },
+  {
+      "name" : "Mapa Ruta",
+      "href" : "/mapa-con-ruta"
+  },
+  {
+      "name" : "Mapa Cluster",
+      "href" : "/mapa-con-cluster"
+  },
+  {
+      "name" : "Mapa Drawing",
+      "href" : "/mapa-con-drawing"
+  },
+  {
+      "name" : "Mapa Direcciones",
+      "href" : "/mapa-con-direcciones"
+  }
 ]
 
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
